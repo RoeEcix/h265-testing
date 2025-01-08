@@ -12,7 +12,7 @@ RUN mv go2rtc_linux_amd64 /usr/local/bin/go2rtc
 RUN mkdir -p /etc/go2rtc
 
 # Add configuration file
-COPY config.yaml /etc/go2rtc/config.yaml
+COPY go2rtc/go2rtc.yaml /etc/go2rtc/config.yaml
 
 # Expose port
 EXPOSE 1984
